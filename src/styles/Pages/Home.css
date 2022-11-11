@@ -1,0 +1,17 @@
+.body {
+  margin: 20px;
+}
+
+.banner-home {
+  background-image: url(../../assets/img/homebackgroundimage.png);
+  filter: brightness(0.8);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}

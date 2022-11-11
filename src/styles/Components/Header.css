@@ -1,0 +1,75 @@
+.header {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-logo-container {
+  flex: 1;
+}
+.logo {
+  width: 6.8rem;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link {
+  color: #ff6060;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 142.6%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 375px) {
+  .logo {
+    width: 147px;
+  }
+  .header-links {
+    gap: 1rem;
+  }
+}
+
+/* Media queries Tablettes*/
+
+@media screen and (min-width: 768px) {
+  .link {
+    text-transform: initial;
+  }
+}
+/* Media queries Desktop*/
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .logo {
+    width: 210.32px;
+    height: auto;
+  }
+  .link {
+    font-size: 24px;
+  }
+}
