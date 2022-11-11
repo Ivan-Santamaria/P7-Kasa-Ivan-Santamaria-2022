@@ -11,7 +11,11 @@ export default function Cards(props) {
       {/* bouclage avec .map() pour afficher les annonces grâce a l'id
       ainsi que la photo de couverture de l'annonce et son titre */}
       {annonces.map((annonce) => (
-        <Link className="links">
+        <Link
+          className="links"
+          to={"/fichelogement/" + annonce.id}
+          key={annonce.id}
+        >
           <ul
             className="cards card-home"
             style={{ backgroundImage: `url(${annonce.cover})` }}
