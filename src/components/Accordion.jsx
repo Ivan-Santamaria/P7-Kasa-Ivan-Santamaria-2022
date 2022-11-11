@@ -3,11 +3,11 @@ import { useState } from "react";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import "../styles/Components/Accordion.css";
 
-export default function Accordion() {
+export default function Accordion(props) {
   return (
     <div className="accordion-item">
       <div className="accordion-flexbox">
-        <p className="accordion-title">"test"</p>
+        <p className="accordion-title">{props.title}</p>
         <p className="accordion-icon">
           <HiChevronDown /> : <HiChevronUp />
         </p>
