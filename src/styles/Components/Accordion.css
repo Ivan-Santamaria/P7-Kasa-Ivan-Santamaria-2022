@@ -1,0 +1,57 @@
+.accordion-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #ff6060;
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.accordion-flexbox:hover {
+  cursor: pointer;
+}
+
+.accordion-title {
+  font-size: 13px;
+}
+
+.accordion-collapse-text-container {
+  color: #ff6060;
+  background-color: #f6f6f6;
+  padding-top: 17px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-bottom: 2px;
+  font-size: 12px;
+}
+
+.accordion-icon {
+  margin-right: 5px;
+}
+
+.collapsed-text {
+  color: #ff6060;
+  margin: 0;
+}
+
+/* Media query */
+@media screen and (min-width: 768px) {
+  .accordion-item {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .accordion-collapse-text-container {
+    padding-top: 30px;
+    padding-bottom: 27px;
+    font-size: 24px;
+  }
+
+  .accordion-title {
+    font-size: 24px;
+  }
+}

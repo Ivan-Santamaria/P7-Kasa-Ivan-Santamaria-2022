@@ -1,0 +1,17 @@
+.banner-about {
+  background-image: url(../../assets/img/backgroundimage.png);
+  filter: brightness(0.9);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 77%;
+    margin: auto;
+  }
+}
