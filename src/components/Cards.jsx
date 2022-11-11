@@ -12,7 +12,10 @@ export default function Cards(props) {
       ainsi que la photo de couverture de l'annonce et son titre */}
       {annonces.map((annonce) => (
         <Link className="links">
-          <ul className="cards card-home">
+          <ul
+            className="cards card-home"
+            style={{ backgroundImage: `url(${annonce.cover})` }}
+          >
             <li className="li">
               <div className="text-shadow">{annonce.title}</div>
             </li>
