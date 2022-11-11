@@ -1,0 +1,72 @@
+/*! 404 */
+.notfound h1 {
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 142.6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ff6060;
+  margin: auto;
+}
+.notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*! Oups! La Page que vous demandez n'existe pas */
+.notfound p {
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  color: #ff6060;
+  margin: auto;
+  width: 62%;
+  margin-bottom: 133px;
+  margin-top: 11px;
+}
+
+/*! Retourner sur la page d'acceuil */
+.to-home-page {
+  font-size: 14px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: underline;
+  text-align: center;
+  justify-content: center;
+  margin-top: 8%;
+  color: #ff6060;
+  margin-bottom: 10%;
+}
+
+/* Média query */
+
+@media screen and (min-width: 768px) {
+  .notfound p {
+    font-size: 36px;
+  }
+
+  .notfound h1 {
+    font-size: 288px;
+  }
+
+  .to-home-page {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .notfound p {
+    margin-bottom: 100px;
+  }
+}

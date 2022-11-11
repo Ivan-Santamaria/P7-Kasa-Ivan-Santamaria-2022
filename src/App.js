@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./Routes/ComponentsRoutes.jsx";
-import { Home } from "./Routes/PagesRoutes.jsx";
+import { Home, NotFound } from "./Routes/PagesRoutes.jsx";
 function App() {
   return (
     <div className="App">
@@ -8,6 +8,9 @@ function App() {
       <Routes>
         {/* Chemin vers la page d'acceuil */}
         <Route path="/" element={<Home />} />
+        {/* Routes vers la page d'erreur 
+        (React-router-v6 n'utilise plus "switch" il faut donc déclarer une route vers l'enssemble des chemins non assignés avec "*")*/}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
