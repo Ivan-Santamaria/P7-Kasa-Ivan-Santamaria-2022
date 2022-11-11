@@ -1,4 +1,4 @@
-import { Banner } from "../Routes/ComponentsRoutes";
+import { Banner, Cards } from "../Routes/ComponentsRoutes";
 import "../styles/Pages/Home.css";
 
 export default function Home(props) {
@@ -7,7 +7,9 @@ export default function Home(props) {
       <div className="banner-home">
         <Banner content="Chez vous, partout et ailleurs" />
       </div>
-      <div className="cards-container"></div>
+      <div className="cards-container">
+        <Cards />
+      </div>
     </div>
   );
 }
