@@ -3,6 +3,7 @@ import {
   LodgingTitle,
   Tags,
   Location,
+  Host,
 } from "../Routes/ComponentsRoutes";
 
 import { useParams } from "react-router-dom";
@@ -19,7 +20,7 @@ export default function Lodging() {
       {annonce.tags.map((tag) => (
         <Tags content={tag} key={tag} />
       ))}
-
+      <Host name={annonce.host.name} avatar={annonce.host.picture} />
       <div className="div-accordion">
         <Accordion title="Description" content={"test"} />
         <Accordion title="Equipements" content={"test2"} />
