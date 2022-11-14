@@ -1,4 +1,4 @@
-import { Accordion, LodgingTitle } from "../Routes/ComponentsRoutes";
+import { Accordion, LodgingTitle, Tags } from "../Routes/ComponentsRoutes";
 
 import { useParams } from "react-router-dom";
 
@@ -9,6 +9,10 @@ export default function Lodging() {
   return (
     <div className="body">
       <LodgingTitle title={annonce.title} />
+
+      {annonce.tags.map((tag) => (
+        <Tags content={tag} key={tag} />
+      ))}
 
       <div className="div-accordion">
         <Accordion title="Description" content={"test"} />
