@@ -1,4 +1,9 @@
-import { Accordion, LodgingTitle, Tags } from "../Routes/ComponentsRoutes";
+import {
+  Accordion,
+  LodgingTitle,
+  Tags,
+  Location,
+} from "../Routes/ComponentsRoutes";
 
 import { useParams } from "react-router-dom";
 
@@ -10,6 +15,7 @@ export default function Lodging() {
     <div className="body">
       <LodgingTitle title={annonce.title} />
 
+      <Location location={annonce.location} />
       {annonce.tags.map((tag) => (
         <Tags content={tag} key={tag} />
       ))}
