@@ -1,0 +1,41 @@
+.host-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.name-container {
+  display: flex;
+  margin-right: 10px;
+}
+
+.name {
+  color: #ff6060;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.profile-picture {
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+
+/* Média query */
+@media screen and (min-width: 768px) {
+  .host-container {
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .profile-picture {
+    width: 64px;
+    height: 64px;
+  }
+}
