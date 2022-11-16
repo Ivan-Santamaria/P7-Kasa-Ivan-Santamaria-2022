@@ -6,6 +6,7 @@ import {
   Location,
   Host,
   Rating,
+  Carousel,
 } from "../Routes/ComponentsRoutes";
 
 export default function Lodging() {
@@ -31,6 +32,7 @@ export default function Lodging() {
         <Accordion title="Equipements" content={annonce.equipments} />
         <Rating rating={annonce.rating} />
       </div>
+      <Carousel pictures={annonce.pictures} />
     </div>
   );
 }
