@@ -29,6 +29,8 @@ export default function Accordion(props) {
           {contentType === "string" && (
             <p className="collapsed-text">{props.content}</p>
           )}
+          {contentType === "object" &&
+            props.content.map((item, index) => <div key={index}>{item}</div>)}
         </div>
       )}
     </div>

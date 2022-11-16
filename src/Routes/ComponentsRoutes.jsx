@@ -9,3 +9,4 @@ export { default as LodgingTitle } from "../components/LodgingTitle";
 export { default as Tags } from "../components/Tags";
 export { default as Location } from "../components/Location";
 export { default as Host } from "../components/Host";
+export { default as Rating} from "../components/Rating"

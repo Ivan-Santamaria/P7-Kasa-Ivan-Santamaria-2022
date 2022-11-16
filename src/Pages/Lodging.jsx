@@ -1,17 +1,22 @@
+import { Navigate, useParams } from "react-router-dom";
 import {
   Accordion,
   LodgingTitle,
   Tags,
   Location,
   Host,
+  Rating,
 } from "../Routes/ComponentsRoutes";
-
-import { useParams } from "react-router-dom";
 
 export default function Lodging() {
   let params = useParams();
   const annonces = require("../datas/logements.json");
   const annonce = annonces.find((x) => x.id === params.id);
+
+  // Si aucun élément n'est trouvé => page 404
+  if (!annonce) {
+    return <Navigate to="/errorpage" />;
+  }
   return (
     <div className="body">
       <LodgingTitle title={annonce.title} />
@@ -22,8 +27,9 @@ export default function Lodging() {
       ))}
       <Host name={annonce.host.name} avatar={annonce.host.picture} />
       <div className="div-accordion">
-        <Accordion title="Description" content={"test"} />
-        <Accordion title="Equipements" content={"test2"} />
+        <Accordion title="Description" content={annonce.description} />
+        <Accordion title="Equipements" content={annonce.equipments} />
+        <Rating rating={annonce.rating} />
       </div>
     </div>
   );

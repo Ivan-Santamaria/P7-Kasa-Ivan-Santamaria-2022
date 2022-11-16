@@ -1,0 +1,9 @@
+.colored-star {
+  color: #ff6060;
+}
+.empty-star {
+  color: #e3e3e3;
+}
+.star {
+  display: flex;
+}
