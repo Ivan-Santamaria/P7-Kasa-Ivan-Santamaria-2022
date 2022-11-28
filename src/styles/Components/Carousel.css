@@ -1,4 +1,3 @@
-
 .carousel-container {
   overflow: hidden;
   width: 100%;
@@ -7,7 +6,6 @@
   border-radius: 10px;
   height: 200px;
 }
-
 .carousel {
   display: flex;
   height: 100%;
@@ -33,12 +31,29 @@
   width: 100%;
 }
 
-.react-icon-chevron {
+.carousel-idx {
+  position: absolute;
+  color: white;
+  text-align: center;
+  bottom: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.react-icons-chevron {
   color: white;
   font-size: 50px;
   width: 100%;
 }
-.react-icon-chevron:hover {
+.react-icons-chevron:hover {
+  cursor: pointer;
+}
+
+.react-icons-radio {
+  font-size: 15px;
+}
+
+.react-icons-radio:hover {
   cursor: pointer;
 }
 
@@ -47,10 +62,28 @@
   justify-content: flex-end;
 }
 
+.radio {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.radiobutton {
+  color: white;
+}
+
+/* Media queries */
 
 @media screen and (min-width: 768px) {
   .carousel-container {
     height: 250px;
+  }
+
+  .react-icons-radio {
+    font-size: 25px;
   }
 }
 
@@ -63,5 +96,9 @@
 @media screen and (min-width: 1440px) {
   .carousel-container {
     height: 450px;
+  }
+
+  .react-icons-radio {
+    font-size: 30px;
   }
 }

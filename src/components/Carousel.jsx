@@ -1,5 +1,6 @@
 import "../styles/Components/Carousel.css";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import { BiRadioCircleMarked, BiRadioCircle } from "react-icons/bi";
 import { useState } from "react";
 
 export default function Carousel(props) {
@@ -28,6 +29,10 @@ export default function Carousel(props) {
     }
   };
 
+  const handleClick = (event, param) => {
+    setCurrentSlide(param);
+  };
+
   return (
     <div className="carousel-container">
       <div
@@ -36,23 +41,33 @@ export default function Carousel(props) {
           transform: `translateX(-${slideIdx * imgSize()}px)`,
         }}
       >
-        {/* On boucle sur les images */}
         {props.pictures.map((picture) => (
           <img
-            className="slider-container-img"
-            alt="slider"
+            className="carousel-container-img"
+            alt="carousel"
             src={picture}
             key={picture}
           />
         ))}
       </div>
       <div className="carousel-controls">
-        <span className="react-icon react-icon-chevron" onClick={onPrev}>
+        <span className="react-icons react-icons-chevron" onClick={onPrev}>
           <HiChevronLeft />
         </span>
-        <span className="react-icon span react-icon-chevron" onClick={onNext}>
+        <span className="react-icons span react-icons-chevron" onClick={onNext}>
           <HiChevronRight />
         </span>
+      </div>
+      <div className="radio">
+        {props.pictures.map((picture, index) => (
+          <span
+            className="react-icons radiobutton react-icons-radio"
+            key={picture}
+            onClick={(event) => handleClick(event, index)}
+          >
+            {slideIdx === index ? <BiRadioCircleMarked /> : <BiRadioCircle />}
+          </span>
+        ))}
       </div>
     </div>
   );
