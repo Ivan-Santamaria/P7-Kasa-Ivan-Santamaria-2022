@@ -8,6 +8,7 @@ import {
   Rating,
   Carousel,
 } from "../Routes/ComponentsRoutes";
+import "../styles/Pages/Lodging.css";
 
 export default function Lodging() {
   let params = useParams();
@@ -20,19 +21,26 @@ export default function Lodging() {
   }
   return (
     <div className="body">
-      <LodgingTitle title={annonce.title} />
-
-      <Location location={annonce.location} />
-      {annonce.tags.map((tag) => (
-        <Tags content={tag} key={tag} />
-      ))}
-      <Host name={annonce.host.name} avatar={annonce.host.picture} />
-      <div className="div-accordion">
+      <Carousel pictures={annonce.pictures} />
+      <div className="element-container">
+        <div>
+          <LodgingTitle title={annonce.title} />
+          <Location location={annonce.location} />
+          <div className="tags">
+            {annonce.tags.map((tag) => (
+              <Tags content={tag} key={tag} />
+            ))}
+          </div>
+        </div>
+        <div className="ratingandhost-container">
+          <Rating rating={annonce.rating} />
+          <Host name={annonce.host.name} avatar={annonce.host.picture} />
+        </div>
+      </div>
+      <div className="accordion-container">
         <Accordion title="Description" content={annonce.description} />
         <Accordion title="Equipements" content={annonce.equipments} />
-        <Rating rating={annonce.rating} />
       </div>
-      <Carousel pictures={annonce.pictures} />
     </div>
   );
 }

@@ -1,5 +1,27 @@
-.div-accordion {
+.ratingandhost-container {
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+  align-items: center;
+}
+
+.element-container {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ratingandhost-container {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .element-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .accordion-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
 }
