@@ -9,6 +9,7 @@ import {
   Carousel,
 } from "../Routes/ComponentsRoutes";
 import "../styles/Pages/Lodging.css";
+import { DynamicTitle } from "../utils/DynamicTitle.jsx";
 
 export default function Lodging() {
   let params = useParams();
@@ -19,6 +20,8 @@ export default function Lodging() {
   if (!annonce) {
     return <Navigate to="/errorpage" />;
   }
+
+  DynamicTitle(`kasa - ` + annonce.title);
   return (
     <div className="body">
       <Carousel pictures={annonce.pictures} />

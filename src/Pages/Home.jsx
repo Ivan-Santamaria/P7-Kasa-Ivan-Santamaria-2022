@@ -1,7 +1,10 @@
 import { Banner, Cards } from "../Routes/ComponentsRoutes";
 import "../styles/Pages/Home.css";
+import { DynamicTitle } from "../utils/DynamicTitle.jsx";
 
 export default function Home(props) {
+  DynamicTitle("kasa - Acceuil");
+
   return (
     <div className="body">
       <div className="banner-home">
