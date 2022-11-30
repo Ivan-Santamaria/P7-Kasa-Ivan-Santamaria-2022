@@ -3,7 +3,7 @@ import "../styles/Pages/Home.css";
 import { DynamicTitle } from "../utils/DynamicTitle.jsx";
 
 export default function Home(props) {
-  DynamicTitle("kasa - Acceuil");
+  DynamicTitle("Kasa - Acceuil");
 
   return (
     <div className="body">

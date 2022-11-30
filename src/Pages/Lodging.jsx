@@ -21,7 +21,7 @@ export default function Lodging() {
     return <Navigate to="/errorpage" />;
   }
 
-  DynamicTitle(`kasa - ` + annonce.title);
+  DynamicTitle(`Kasa - ` + annonce.title);
   return (
     <div className="body">
       <Carousel pictures={annonce.pictures} />

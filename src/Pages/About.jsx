@@ -5,7 +5,7 @@ import { DynamicTitle } from "../utils/DynamicTitle.jsx";
 const aboutData = require("../datas/aboutData.json");
 
 export default function About() {
-  DynamicTitle("kasa - Àpropos");
+  DynamicTitle("Kasa - À Propos");
 
   return (
     <div className="body">

@@ -4,7 +4,7 @@ import "../styles/Pages/NotFound.css";
 import { DynamicTitle } from "../utils/DynamicTitle.jsx";
 
 export default function NotFound() {
-  DynamicTitle("kasa - 404: Introuvable :(");
+  DynamicTitle("Kasa - Page Introuvable :(");
 
   return (
     <div className="notfound">

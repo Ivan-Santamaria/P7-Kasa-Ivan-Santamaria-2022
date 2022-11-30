@@ -3,7 +3,7 @@ import { Header, Footer } from "./Routes/ComponentsRoutes.jsx";
 import { Home, About, NotFound, Lodging } from "./Routes/PagesRoutes.jsx";
 import { DynamicTitle } from "./utils/DynamicTitle.jsx";
 function App() {
-  DynamicTitle("kasa");
+  DynamicTitle("Kasa");
   return (
     <div className="App">
       <Header />
