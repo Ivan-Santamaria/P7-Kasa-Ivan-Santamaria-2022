@@ -1,9 +1,12 @@
-// Import de link pour la redirection vers la page home
+// Importation de link depuis react-router-dom pour la redirection vers la page home
+// Importation du titre
+// Importation du css
 import { Link } from "react-router-dom";
-import "../styles/Pages/NotFound.css";
 import { DynamicTitle } from "../utils/DynamicTitle.jsx";
+import "../styles/Pages/NotFound.css";
 
 export default function NotFound() {
+  // Modification du titre de l'onglet
   DynamicTitle("Kasa - Page Introuvable :(");
 
   return (
