@@ -54,6 +54,7 @@ export default function Carousel(props) {
         <span className="react-icons react-icons-chevron" onClick={onPrev}>
           <HiChevronLeft />
         </span>
+        {/* Ajout d'une classe différencié pour alligner les chevrons avec flexbox */}
         <span className="react-icons span react-icons-chevron" onClick={onNext}>
           <HiChevronRight />
         </span>
