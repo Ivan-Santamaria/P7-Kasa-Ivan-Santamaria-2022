@@ -1,6 +1,6 @@
-.container {
+/* .container {
   max-width: 191px;
-}
+} */
 .div-container {
   width: 100%;
   margin-left: 16px;
@@ -26,7 +26,7 @@
 /* Média query */
 @media screen and (min-width: 768px) {
   .home-paragraph {
-    font-size: 48px;
+    font-size: 36px;
     width: 100%;
     text-align: center;
   }

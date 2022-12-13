@@ -24,6 +24,16 @@ export default function About() {
         <Accordion title={aboutData[1].title} content={aboutData[1].content} />
         <Accordion title={aboutData[2].title} content={aboutData[2].content} />
         <Accordion title={aboutData[3].title} content={aboutData[3].content} />
+
+        {/* Test de bouclage avec .map */}
+        {/* <Accordion
+          title={aboutData.map((aboutData, title) => (
+            <span key={title}>{aboutData.title}</span>
+          ))}
+          content={aboutData.map((aboutData, content) => (
+            <span key={content}>{aboutData.content}</span>
+          ))}
+        /> */}
       </div>
     </div>
   );

@@ -11,8 +11,7 @@
   margin-bottom: 22px;
   background: #ff6060;
   border-radius: 10px;
-  font-style: none;
-  height: 255px;
+  height: 225px;
   list-style: none;
   display: flex;
   align-items: flex-end;
@@ -23,7 +22,6 @@
 .cards:hover {
   cursor: pointer;
 }
-
 
 .li {
   width: 42%;
@@ -39,13 +37,12 @@
 }
 
 .text-shadow {
-  text-shadow: 0px 0px 4px grey;
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.81);
 }
 
 /* Media query */
 
 @media screen and (min-width: 425px) {
-  
   .div-cards {
     display: flex;
     flex-wrap: wrap;
