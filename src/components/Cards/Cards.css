@@ -42,7 +42,7 @@
 
 /* Media query */
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 768px) {
   .div-cards {
     display: flex;
     flex-wrap: wrap;
@@ -52,13 +52,6 @@
   .links {
     width: 49%;
   }
-
-  .card-home {
-    height: 153px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .card-home {
     height: 240px;
   }
