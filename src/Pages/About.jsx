@@ -19,21 +19,9 @@ export default function About() {
         <Banner />
       </div>
       <div className="accordion-about-container">
-        {/* Récupération des éléments de aboutData.json et injection dans le titre et le contenu de l'accordéon */}
-        <Accordion title={aboutData[0].title} content={aboutData[0].content} />
-        <Accordion title={aboutData[1].title} content={aboutData[1].content} />
-        <Accordion title={aboutData[2].title} content={aboutData[2].content} />
-        <Accordion title={aboutData[3].title} content={aboutData[3].content} />
-
-        {/* Test de bouclage avec .map */}
-        {/* <Accordion
-          title={aboutData.map((aboutData, title) => (
-            <span key={title}>{aboutData.title}</span>
-          ))}
-          content={aboutData.map((aboutData, content) => (
-            <span key={content}>{aboutData.content}</span>
-          ))}
-        /> */}
+        {aboutData.map(({ title, content }) => (
+          <Accordion key={title} title={title} content={content} />
+        ))}
       </div>
     </div>
   );
