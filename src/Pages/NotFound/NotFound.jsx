@@ -2,8 +2,8 @@
 // Importation du titre
 // Importation du css
 import { Link } from "react-router-dom";
-import { DynamicTitle } from "../utils/DynamicTitle.jsx";
-import "../styles/Pages/NotFound.css";
+import { DynamicTitle } from "../../utils/DynamicTitle.jsx";
+import "./NotFound.css";
 
 export default function NotFound() {
   // Modification du titre de l'onglet

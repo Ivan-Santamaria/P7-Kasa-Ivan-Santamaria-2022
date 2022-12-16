@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import whiteLogo from "../assets/img/white-logo.svg";
-import "../styles/Components/Footer.css";
+import whiteLogo from "../../assets/img/white-logo.svg";
+import "./Footer.css";
 
 export default function Footer() {
   return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 // Importation des îcones chevron
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
-import "../styles/Components/Accordion.css";
+import "./Accordion.css";
 
 export default function Accordion(props) {
   // Le contenu de l'accordéon est invisible par défault

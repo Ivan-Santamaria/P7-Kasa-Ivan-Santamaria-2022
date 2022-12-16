@@ -1,4 +1,4 @@
-import "../styles/Components/Rating.css";
+import "./Rating.css";
 import { AiFillStar } from "react-icons/ai";
 
 export default function Rating(props) {

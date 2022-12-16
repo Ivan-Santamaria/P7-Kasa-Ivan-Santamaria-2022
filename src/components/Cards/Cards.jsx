@@ -1,10 +1,10 @@
 // Importation de link a partir de react router dom
 import { Link } from "react-router-dom";
-import "../styles/Components/Cards.css";
+import "./Cards.css";
 
 export default function Cards(props) {
   // Importation des données de logements sur le fichier .json
-  const annonces = require("../datas/logements.json");
+  const annonces = require("../../datas/logements.json");
 
   return (
     <div className="div-cards">

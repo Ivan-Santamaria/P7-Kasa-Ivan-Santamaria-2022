@@ -1,4 +1,4 @@
-import "../styles/Components/Host.css";
+import "./Host.css";
 
 export default function Host(props) {
   return (

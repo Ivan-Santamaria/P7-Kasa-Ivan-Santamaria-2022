@@ -1,7 +1,7 @@
 // Importation de Link depuis react-router-dom
 import { Link } from "react-router-dom";
-import "../styles/Components/Header.css";
-import logo from "../assets/img/logo.svg";
+import "./Header.css";
+import logo from "../../assets/img/logo.svg";
 
 export default function Header() {
   return (

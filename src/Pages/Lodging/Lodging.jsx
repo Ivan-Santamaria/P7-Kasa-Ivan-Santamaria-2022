@@ -1,4 +1,4 @@
-// Importaion de Navigate & useParams depuis react-router-dom 
+// Importaion de Navigate & useParams depuis react-router-dom
 // Importation des components utilisés sur la page
 // Importaion du titre
 // Importation du css
@@ -11,15 +11,15 @@ import {
   Host,
   Rating,
   Carousel,
-} from "../Routes/ComponentsRoutes";
-import { DynamicTitle } from "../utils/DynamicTitle.jsx";
-import "../styles/Pages/Lodging.css";
+} from "../../Routes/ComponentsRoutes";
+import { DynamicTitle } from "../../utils/DynamicTitle.jsx";
+import "./Lodging.css";
 
 export default function Lodging() {
   // Utilisation de useParams afin de récupérer les paramètres dans l'URL
   let params = useParams();
   // Récupération des logements dans le fichier json
-  const annonces = require("../datas/logements.json");
+  const annonces = require("../../datas/logements.json");
   // Utilisation de .find() pour trouver l'information désirée dans le fichier json
   // Utilisation de params pour cibler la recherche avec l'id correspondant
   const annonce = annonces.find((x) => x.id === params.id);

@@ -1,5 +1,5 @@
 // importation du fichier css
-import "../styles/Components/Banner.css";
+import "./Banner.css";
 
 export default function Banner(props) {
   return (

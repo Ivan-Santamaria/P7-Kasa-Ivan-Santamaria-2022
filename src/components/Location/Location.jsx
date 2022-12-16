@@ -1,4 +1,4 @@
-import "../styles/Components/Location.css";
+import "./Location.css";
 
 export default function Location(props) {
   return (

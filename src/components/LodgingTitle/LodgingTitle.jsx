@@ -1,6 +1,4 @@
-
-import "../styles/Components/LodgingTitle.css";
-
+import "./LodgingTitle.css";
 
 export default function LodgingTitle(props) {
   return (

@@ -1,9 +1,9 @@
 // Importation de la banière & carte de présentation
 // Importation du titre
 // Importation du css
-import { Banner, Cards } from "../Routes/ComponentsRoutes";
-import { DynamicTitle } from "../utils/DynamicTitle.jsx";
-import "../styles/Pages/Home.css";
+import { Banner, Cards } from "../../Routes/ComponentsRoutes";
+import { DynamicTitle } from "../../utils/DynamicTitle.jsx";
+import "./Home.css";
 
 export default function Home(props) {
   DynamicTitle("Kasa - Acceuil");

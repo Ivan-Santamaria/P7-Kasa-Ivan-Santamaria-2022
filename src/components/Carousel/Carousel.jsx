@@ -1,4 +1,4 @@
-import "../styles/Components/Carousel.css";
+import "./Carousel.css";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { BiRadioCircleMarked, BiRadioCircle } from "react-icons/bi";
 import { useState } from "react";
