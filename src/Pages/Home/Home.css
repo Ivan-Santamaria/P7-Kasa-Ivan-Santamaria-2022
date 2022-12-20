@@ -4,7 +4,7 @@
 
 .banner-home {
   background-image: url(../../assets/img/homebackgroundimage.png);
-  filter: brightness(0.8);
+  filter: brightness(90%);
   background-size: cover;
   border-radius: 10px;
 }
