@@ -66,6 +66,13 @@ export default function Carousel(props) {
             key={picture}
             onClick={(event) => handleClick(event, index)}
           >
+            {/* Proposition n°1 Numérotation*/}
+            {/* {index === slideIdx && (
+              <span className="image-number">
+                {slideIdx + 1}/{props.pictures.length}
+              </span>
+            )} */}
+            {/* Proposition n°2 Bouton radio */}
             {slideIdx === index ? <BiRadioCircleMarked /> : <BiRadioCircle />}
           </span>
         ))}

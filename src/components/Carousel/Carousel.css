@@ -44,13 +44,19 @@
   color: white;
   font-size: 8em;
   width: 100%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .react-icons-chevron:hover {
   cursor: pointer;
+  filter: drop-shadow(5px 8px 8px black);
+}
+.react-icons-chevron:active {
+  filter: brightness(0.9);
 }
 
 .react-icons-radio {
   font-size: 15px;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .react-icons-radio:hover {
@@ -73,6 +79,10 @@
 
 .radiobutton {
   color: white;
+}
+.image-number {
+  filter: drop-shadow(2px 4px 6px black);
+  font-weight: 600;
 }
 
 /* Media queries */
