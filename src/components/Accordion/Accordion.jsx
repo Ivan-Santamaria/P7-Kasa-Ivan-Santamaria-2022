@@ -19,7 +19,7 @@ export default function Accordion(props) {
         // Si Caché au click => déplois les informations
         onClick={() => setVisibility(!visible)}
       >
-        <p className="accordion-title">{props.title}</p>
+        <h2 className="accordion-title">{props.title}</h2>
         <p className="accordion-icon">
           {visible ? <HiChevronDown /> : <HiChevronUp />}
         </p>

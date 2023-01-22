@@ -9,7 +9,11 @@ export default function Host(props) {
       </div>
       <div className="picture-container">
         {/* Utilisation des props pour l'affichage de la photo de l'hôte */}
-        <img src={props.avatar} className="profile-picture" alt="profile" />
+        <img
+          src={props.avatar}
+          className="profile-picture"
+          alt="Profil de l'annonceur"
+        />
       </div>
     </div>
   );

@@ -21,7 +21,7 @@
 }
 
 /*! Oups! La Page que vous demandez n'existe pas */
-.notfound p {
+.notfound h2 {
   font-size: 18px;
   line-height: 142.6%;
   display: flex;

@@ -5,6 +5,10 @@
   background-size: cover;
   border-radius: 10px;
 }
+/* Suppprime la visibilité du texte de la banière, page About */
+.banner-about h1 {
+  visibility: hidden;
+}
 /* Utilisation de flexbox */
 @media screen and (min-width: 768px) {
   .accordion-about-container {

@@ -12,7 +12,7 @@ export default function NotFound() {
   return (
     <div className="notfound">
       <h1>404</h1>
-      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <h2>Oups! La page que vous demandez n'existe pas.</h2>
       <Link className="to-home-page" to="/">
         Retourner sur la page d'accueil
       </Link>

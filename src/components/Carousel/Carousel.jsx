@@ -44,7 +44,7 @@ export default function Carousel(props) {
         {props.pictures.map((picture) => (
           <img
             className="carousel-container-img"
-            alt="carousel"
+            alt="Images defilant dans le carousel"
             src={picture}
             key={picture}
           />

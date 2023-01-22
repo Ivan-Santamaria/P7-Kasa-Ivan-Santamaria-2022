@@ -47,6 +47,7 @@
   filter: drop-shadow(2px 4px 6px black);
 }
 .react-icons-chevron:hover {
+  color: #ff6060;
   cursor: pointer;
   filter: drop-shadow(5px 8px 8px black);
 }
@@ -60,6 +61,7 @@
 }
 
 .react-icons-radio:hover {
+  color: #ff6060;
   cursor: pointer;
 }
 

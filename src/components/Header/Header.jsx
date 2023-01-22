@@ -8,10 +8,14 @@ export default function Header() {
     <div className="header">
       <div className="header-logo-container">
         <Link to="/" className="link">
-          <img src={logo} alt="logo" className="logo" />
+          <img
+            src={logo}
+            alt="logo d'en-tête du site Kasa, site d'annonce de location entre particuliers"
+            className="logo"
+          />
         </Link>
       </div>
-      <div className="header-links">
+      <div id="header-links">
         <div className="header-links-home">
           <Link to="/" className="link">
             Accueil

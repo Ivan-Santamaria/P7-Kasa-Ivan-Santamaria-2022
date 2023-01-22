@@ -4,7 +4,7 @@ export default function LodgingTitle(props) {
   return (
     <div>
       <div className="title-container">
-        <div className="title">{props.title}</div>
+        <h1 className="title">{props.title}</h1>
       </div>
     </div>
   );
