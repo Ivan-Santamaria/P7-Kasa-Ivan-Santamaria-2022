@@ -42,7 +42,7 @@
 .react-icons-chevron {
   display: flex;
   color: white;
-  font-size: 8em;
+  font-size: 2em;
   width: 100%;
   filter: drop-shadow(2px 4px 6px black);
 }
@@ -93,6 +93,9 @@
   .carousel-container {
     height: 250px;
   }
+  .react-icons-chevron {
+    font-size: 4em;
+  }
 
   .react-icons-radio {
     font-size: 25px;
@@ -102,6 +105,9 @@
 @media screen and (min-width: 1024px) {
   .carousel-container {
     height: 350px;
+  }
+  .react-icons-chevron {
+    font-size: 6em;
   }
 }
 
