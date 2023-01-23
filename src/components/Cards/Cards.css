@@ -27,7 +27,7 @@
 }
 
 .li {
-  width: 42%;
+  width: 42%; /* Nom des appartements mis sur la gauche pour améliorer la lisibilité sur petit ecrans */
   margin-bottom: 15px;
 }
 
@@ -43,7 +43,6 @@
   opacity: 0.8 !important;
   transition-delay: 0s !important;
   transition-duration: 0.15s !important;
-  color: #ff6060;
 }
 
 .text-shadow {
@@ -74,6 +73,9 @@
 @media screen and (min-width: 1024px) {
   .links {
     width: 32%;
+  }
+  .li {
+    width: 100%; /* Les noms des appartements reprennent la largeur maximale */
   }
 }
 

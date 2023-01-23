@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   background-color: black;
+  padding-bottom: auto;
+}
+.link-footer:hover {
+  filter: brightness(0.5);
 }
 
 .margin-top-bottom {

@@ -7,7 +7,7 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-display">
         <div className="margin-top-bottom">
-          <Link to="/" className="link">
+          <Link to="/" className="link link-footer">
             <img
               src={whiteLogo}
               alt="logo de pied de page du site Kasa, site d'annonce de location entre particuliers "
