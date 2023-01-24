@@ -1,3 +1,39 @@
+
+![Kasa](https://user.oc-static.com/upload/2022/06/24/16560899769906_FR_811_P8_Banner-Kasa%20%281%29.png)
+
+
+# Compétences évaluées
+ - Initialiser une application avec Create React App
+- Développer des éléments de l'interface d'un site web grâce à des composants React
+- Configurer la navigation entre les pages de l'application avec React Router
+
+# Déploiement
+
+## Pré-Requis
+
+Vous devez disposer de:
+
+- YARN
+
+### Cloner le projet
+
+- Depuis un terminal utilisez la commande: `git clone https://github.com/Ivan-Santamaria/P7-Kasa-Ivan-Santamaria-2022.git` afin de récupérer le projet
+
+### Installation des dépendances
+
+- Positionnez vous à la racine du projet avec la commande: `cd P7-Kasa-Ivan-Santamaria-2022/`.
+- (Optionnel) Si vous utilisez VScode utilisez la commande: `code . `
+- Lancez la comande: `yarn install` pour installer les dépendences utilisées lors du dévellopement .
+
+
+### Démarrez le projet
+
+- Depuis le dossier `P7-Kasa-Ivan-Santamaria-2022` lancez la commande: `yarn start`
+- Si tout c'est bien passé vous devriez apercevoir le message suivant dans vôtre terminal: `webpack compiled successfully`
+- Si le lancement ne se fait pas de manière automatique ou si vous desirez changer de navigateur web vous pouvez inscrire dans la barre url: `http://localhost:3000` pour acceder à la page d'acceuil du site.
+- Bonne navigation!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +104,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
