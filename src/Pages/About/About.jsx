@@ -2,7 +2,7 @@
 // Importation du titre
 // Importation du css
 import { Banner, Accordion } from "../../Routes/ComponentsRoutes";
-import { DynamicTitle } from "../../utils/DynamicTitle.jsx";
+import { DynamicTitle } from "../../utils/DynamicTitle/DynamicTitle.jsx";
 import "./About.css";
 
 // Importation du fichier json contenant les information de la page Apropos
@@ -18,6 +18,7 @@ export default function About() {
     <div className="body">
       <div className="banner-about">
         {/* Injection de la banière */}
+        
         <Banner content="Chez vous, partout et ailleurs" />
       </div>
       {/* Utilisation de .map pour boucler la récupation du titre et du contenu  */}

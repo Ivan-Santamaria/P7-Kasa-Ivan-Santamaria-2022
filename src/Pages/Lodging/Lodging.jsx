@@ -12,7 +12,7 @@ import {
   Rating,
   Carousel,
 } from "../../Routes/ComponentsRoutes";
-import { DynamicTitle } from "../../utils/DynamicTitle.jsx";
+import { DynamicTitle } from "../../utils/DynamicTitle/DynamicTitle.jsx";
 import "./Lodging.css";
 
 export default function Lodging() {

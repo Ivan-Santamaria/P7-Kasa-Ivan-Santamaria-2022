@@ -3,8 +3,9 @@
 // Importation du logo pour le top scroll
 // Importation du css
 import { Banner, Cards } from "../../Routes/ComponentsRoutes";
-import { DynamicTitle } from "../../utils/DynamicTitle.jsx";
-import { BiArrowToTop } from "react-icons/bi";
+import { DynamicTitle } from "../../utils/DynamicTitle/DynamicTitle.jsx";
+import ScrollToTop from "../../utils/ScrollToTop/ScrollToTop";
+
 import "./Home.css";
 
 export default function Home(props) {
@@ -17,11 +18,7 @@ export default function Home(props) {
         <Banner content="Chez vous, partout et ailleurs" />
       </div>
       {/* Bouton pour remonter la page */}
-      <div id="scroll_to_top">
-        <a href="#top" className="arrow-top">
-          <BiArrowToTop />
-        </a>
-      </div>
+      <ScrollToTop />
       <div className="cards-container">
         {/* Injection des cards */}
         <Cards />
