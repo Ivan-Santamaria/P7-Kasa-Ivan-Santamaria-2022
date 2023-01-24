@@ -14,10 +14,11 @@ export default function Rating(props) {
   return (
     <div className="avis">
       <div className="star">
+        {/* Utilisation de props pour la réupération de la note de l'annonce */}
+        {/* Creation d'un tableau de 5 étoiles */}
         {Array.from({ length: parseInt(props.rating) }, (v, idx) => (
           <ColoredStar key={"colored-" + idx} />
         ))}
-
         {Array.from({ length: 5 - parseInt(props.rating) }, (v, idx) => (
           <EmptyStar key={"empty-" + idx} />
         ))}

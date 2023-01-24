@@ -7,6 +7,7 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-display">
         <div className="margin-top-bottom">
+          {/* Renvoi vers la page d'acceuil */}
           <Link to="/" className="link link-footer">
             <img
               src={whiteLogo}

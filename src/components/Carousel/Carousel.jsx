@@ -4,7 +4,9 @@ import { BiRadioCircleMarked, BiRadioCircle } from "react-icons/bi";
 import { useState } from "react";
 
 export default function Carousel(props) {
+  // Initialise le state à 0 pour
   const [slideIdx, setCurrentSlide] = useState(0);
+  // Definis les taille d'images en fonction du conteneur
   const imgSize = () => {
     const sliderImg = document.querySelector(".carousel-container img");
     if (!sliderImg) {
@@ -12,7 +14,7 @@ export default function Carousel(props) {
     }
     return sliderImg.width;
   };
-
+  //  Permettra l'incrémentation dans le slider
   const onNext = () => {
     if (slideIdx === props.pictures.length - 1) {
       setCurrentSlide(0);
@@ -20,7 +22,7 @@ export default function Carousel(props) {
       setCurrentSlide(slideIdx + 1);
     }
   };
-
+  //  Permettra la décrementation dans le slider
   const onPrev = () => {
     if (slideIdx === 0) {
       setCurrentSlide(props.pictures.length - 1);
@@ -28,7 +30,7 @@ export default function Carousel(props) {
       setCurrentSlide(slideIdx - 1);
     }
   };
-
+  // Permettra le click sur les bouton radio pour sélection manuelle
   const handleClick = (event, param) => {
     setCurrentSlide(param);
   };
@@ -41,6 +43,7 @@ export default function Carousel(props) {
           transform: `translateX(-${slideIdx * imgSize()}px)`,
         }}
       >
+        {/* Bouclage avec .map sur les images pour toute les envoyer dans l'espace carousel */}
         {props.pictures.map((picture) => (
           <img
             className="carousel-container-img"
@@ -50,6 +53,7 @@ export default function Carousel(props) {
           />
         ))}
       </div>
+      {/* Espace des contrôles du carousel: Gauche <=> Droite */}
       <div className="carousel-controls">
         <span className="react-icons react-icons-chevron" onClick={onPrev}>
           <HiChevronLeft />
@@ -59,7 +63,9 @@ export default function Carousel(props) {
           <HiChevronRight />
         </span>
       </div>
+      {/* Espace des contrôles du carousel: Bas de page, bouton radio ou décompte d'images */}
       <div className="radio">
+        {/* Bouclage avec map pour la récuparation de l'index des images et permettre l'affichage ou la navigation au click(radio) */}
         {props.pictures.map((picture, index) => (
           <span
             className="react-icons radiobutton react-icons-radio"

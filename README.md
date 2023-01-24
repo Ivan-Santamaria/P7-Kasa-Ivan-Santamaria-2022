@@ -1,9 +1,11 @@
-
 ![Kasa](https://user.oc-static.com/upload/2022/06/24/16560899769906_FR_811_P8_Banner-Kasa%20%281%29.png)
-
+### Maquettes Figma
+  Disponible sur le lien suivant: 
+ - https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0
 
 # Compétences évaluées
- - Initialiser une application avec Create React App
+
+- Initialiser une application avec Create React App
 - Développer des éléments de l'interface d'un site web grâce à des composants React
 - Configurer la navigation entre les pages de l'application avec React Router
 
@@ -25,14 +27,12 @@ Vous devez disposer de:
 - (Optionnel) Si vous utilisez VScode utilisez la commande: `code . `
 - Lancez la comande: `yarn install` pour installer les dépendences utilisées lors du dévellopement .
 
-
 ### Démarrez le projet
 
 - Depuis le dossier `P7-Kasa-Ivan-Santamaria-2022` lancez la commande: `yarn start`
 - Si tout c'est bien passé vous devriez apercevoir le message suivant dans vôtre terminal: `webpack compiled successfully`
 - Si le lancement ne se fait pas de manière automatique ou si vous desirez changer de navigateur web vous pouvez inscrire dans la barre url: `http://localhost:3000` pour acceder à la page d'acceuil du site.
 - Bonne navigation!
-
 
 # Getting Started with Create React App
 
@@ -104,4 +104,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
