@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Button = styled.div`
   position: fixed;
-  right: 0.5em;
+  right: 0.1em;
   bottom: 50px;
   height: 20px;
   font-size: 3rem;
@@ -21,10 +21,11 @@ export const Button = styled.div`
   }
 `;
 
-export default function ScrollButton() {
+export default function ScrollToTop() {
   // Le state du bouton n'est pas visible par default
   const [visible, setVisible] = useState(false);
 
+  // Si le scroll est supérieur à 300px depuis le haut de page affiche le bouton, sinon il disparait "scroll manuel" ou n'apparait pas "par defaut"
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 300) {
@@ -33,18 +34,17 @@ export default function ScrollButton() {
       setVisible(false);
     }
   };
-  // Renvoi vers le top de la page
+  // Renvoi vers le top de la page comportement => doux
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-      /* you can also use 'auto' behaviour
-		in place of 'smooth' */
     });
   };
 
   window.addEventListener("scroll", toggleVisible);
 
+  // Envoi à l'utilisateur le logo
   return (
     <Button className="scroll-to-top-btn">
       <FaArrowCircleUp
