@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./Routes/ComponentsRoutes.jsx";
 import { Home, About, NotFound, Lodging } from "./Routes/PagesRoutes.jsx";
-import { DynamicTitle } from "./utils/DynamicTitle/DynamicTitle.jsx";
+import { DynamicTitle } from "./components/DynamicTitle/DynamicTitle.jsx";
 function App() {
   DynamicTitle("Kasa");
   return (
@@ -10,7 +10,6 @@ function App() {
       <Routes>
         {/* => Page d'acceuil */}
         <Route path="/" element={<Home />} />
-
         {/* => Fiche Logement  route/:id */}
         <Route path="fichelogement/:id" element={<Lodging />} />
         {/* => Page A propros */}

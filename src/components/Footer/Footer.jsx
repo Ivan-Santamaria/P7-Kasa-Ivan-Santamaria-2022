@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import whiteLogo from "../../assets/img/white-logo.svg";
+import whiteLogo from "../../img/white-logo.svg";
 import "./Footer.css";
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
           <Link to="/" className="link link-footer">
             <img
               src={whiteLogo}
-              alt="logo de pied de page du site Kasa, site d'annonce de location entre particuliers "
+              alt="Logo de pied de page du site Kasa, site d'annonce de location entre particuliers "
             />
           </Link>
         </div>

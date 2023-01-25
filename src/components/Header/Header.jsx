@@ -1,7 +1,7 @@
 // Importation de Link depuis react-router-dom
 import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from "../../assets/img/logo.svg";
+import logo from "../../img/logo.svg";
 
 export default function Header() {
   return (
@@ -11,7 +11,7 @@ export default function Header() {
         <Link to="/" className="link link-header">
           <img
             src={logo}
-            alt="logo d'en-tête du site Kasa, site d'annonce de location entre particuliers"
+            alt="Logo d'en-tête du site Kasa, site d'annonce de location entre particuliers"
             className="logo"
           />
         </Link>

@@ -1,11 +1,11 @@
 /* Injection de la bannière et d'un filtre de luminosité  */
 .banner-about {
-  background-image: url(../../assets/img/aboutbackgroundimage.png);
+  background-image: url(../../img/aboutbackgroundimage.png);
   filter: brightness(90%);
   background-size: cover;
   border-radius: 10px;
 }
-/* Suppprime la visibilité du texte de la banière, page About */
+/* Suppprime la visibilité du texte (h1) de la banière, page About, permet toutefois de le garder qu'un premier niveau de titre soit present sur la page */
 .banner-about h1 {
   visibility: hidden;
 }

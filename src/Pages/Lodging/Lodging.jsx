@@ -12,7 +12,7 @@ import {
   Rating,
   Carousel,
 } from "../../Routes/ComponentsRoutes";
-import { DynamicTitle } from "../../utils/DynamicTitle/DynamicTitle.jsx";
+import { DynamicTitle } from "../../components/DynamicTitle/DynamicTitle.jsx";
 import "./Lodging.css";
 
 export default function Lodging() {
@@ -26,7 +26,7 @@ export default function Lodging() {
 
   // Si aucun élément correspondant n'est trouvé => page 404 avec Navigate
   if (!annonce) {
-    return <Navigate to="/errorpage" />;
+    return <Navigate to="/notfound" />;
   }
   // Récupération du nom donné à l'annonce, et injection dans le titre de l'onglet.
   DynamicTitle(`Kasa - ${annonce.title}`);

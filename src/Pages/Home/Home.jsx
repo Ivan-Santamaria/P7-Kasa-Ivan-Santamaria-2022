@@ -3,8 +3,8 @@
 // Importation du logo pour le top scroll
 // Importation du css
 import { Banner, Cards } from "../../Routes/ComponentsRoutes";
-import { DynamicTitle } from "../../utils/DynamicTitle/DynamicTitle.jsx";
-import ScrollToTop from "../../utils/ScrollToTop/ScrollToTop";
+import { DynamicTitle } from "../../components/DynamicTitle/DynamicTitle.jsx";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 import "./Home.css";
 

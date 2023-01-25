@@ -2,7 +2,7 @@
 // Importation du titre
 // Importation du css
 import { Banner, Accordion } from "../../Routes/ComponentsRoutes";
-import { DynamicTitle } from "../../utils/DynamicTitle/DynamicTitle.jsx";
+import { DynamicTitle } from "../../components/DynamicTitle/DynamicTitle.jsx";
 import "./About.css";
 
 // Importation du fichier json contenant les information de la page Apropos
@@ -18,10 +18,9 @@ export default function About() {
     <div className="body">
       <div className="banner-about">
         {/* Injection de la banière */}
-        
         <Banner content="Chez vous, partout et ailleurs" />
       </div>
-      {/* Utilisation de .map pour boucler la récupation du titre et du contenu  */}
+      {/* Utilisation de .map pour boucler la récupation du titre et du contenu, pour un ajout simplifié par les gérants du site  */}
       <div className="accordion-about-container">
         {aboutData.map(({ title, content }) => (
           <Accordion key={title} title={title} content={content} />

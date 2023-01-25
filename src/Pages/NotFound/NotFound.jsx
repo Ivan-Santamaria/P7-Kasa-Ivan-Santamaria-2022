@@ -2,7 +2,7 @@
 // Importation du titre
 // Importation du css
 import { Link } from "react-router-dom";
-import { DynamicTitle } from "../../utils/DynamicTitle/DynamicTitle.jsx";
+import { DynamicTitle } from "../../components/DynamicTitle/DynamicTitle.jsx";
 import "./NotFound.css";
 
 export default function NotFound() {

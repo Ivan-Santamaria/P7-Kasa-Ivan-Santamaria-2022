@@ -4,9 +4,9 @@ import { BiRadioCircleMarked, BiRadioCircle } from "react-icons/bi";
 import { useState } from "react";
 
 export default function Carousel(props) {
-  // Initialise le state à 0 pour
+  // Initialise le state à 0, permet de se placer sur l'index 0 du json soit la première image de la liste
   const [slideIdx, setCurrentSlide] = useState(0);
-  // Definis les taille d'images en fonction du conteneur
+  // Defini les taille d'images en fonction du conteneur
   const imgSize = () => {
     const sliderImg = document.querySelector(".carousel-container img");
     if (!sliderImg) {
@@ -14,7 +14,7 @@ export default function Carousel(props) {
     }
     return sliderImg.width;
   };
-  //  Permettra l'incrémentation dans le slider
+  //  Permettra l'incrémentation dans le slider, passe à l'image suivante
   const onNext = () => {
     if (slideIdx === props.pictures.length - 1) {
       setCurrentSlide(0);
@@ -22,7 +22,7 @@ export default function Carousel(props) {
       setCurrentSlide(slideIdx + 1);
     }
   };
-  //  Permettra la décrementation dans le slider
+  //  Permettra la décrementation dans le slider, retourne à l'image précédente
   const onPrev = () => {
     if (slideIdx === 0) {
       setCurrentSlide(props.pictures.length - 1);
@@ -30,7 +30,7 @@ export default function Carousel(props) {
       setCurrentSlide(slideIdx - 1);
     }
   };
-  // Permettra le click sur les bouton radio pour sélection manuelle
+  // Permettra le click sur les bouton radio pour une sélection manuelle des images
   const handleClick = (event, param) => {
     setCurrentSlide(param);
   };
@@ -39,6 +39,7 @@ export default function Carousel(props) {
     <div className="carousel-container">
       <div
         className="carousel"
+        // Mouvement de déplacement des image sur un axe x (horizontal) entraine un remplacement total par la nouvele image
         style={{
           transform: `translateX(-${slideIdx * imgSize()}px)`,
         }}
