@@ -1,6 +1,6 @@
 import "./Carousel.css";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-import { BiRadioCircleMarked, BiRadioCircle } from "react-icons/bi";
+// import { BiRadioCircleMarked, BiRadioCircle } from "react-icons/bi";
 import { useState } from "react";
 
 export default function Carousel(props) {
@@ -74,13 +74,13 @@ export default function Carousel(props) {
             onClick={(event) => handleClick(event, index)}
           >
             {/* Proposition n°1 Numérotation*/}
-            {/* {index === slideIdx && (
+            {index === slideIdx && (
               <span className="image-number">
                 {slideIdx + 1}/{props.pictures.length}
               </span>
-            )} */}
+            )}
             {/* Proposition n°2 Bouton radio */}
-            {slideIdx === index ? <BiRadioCircleMarked /> : <BiRadioCircle />}
+            {/* {slideIdx === index ? <BiRadioCircleMarked /> : <BiRadioCircle />} */}
           </span>
         ))}
       </div>

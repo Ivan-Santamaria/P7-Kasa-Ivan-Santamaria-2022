@@ -1,18 +1,8 @@
-/* Mise à la marge de 20px pour la navigation mobile  */
-.body {
-  margin: 20px;
-}
 /* Injection de la bannière et d'un filtre de luminosité  */
 .banner-home {
   background-image: url(../../img/homebackgroundimage.png);
   filter: brightness(90%);
   background-size: cover;
   border-radius: 10px;
-}
-/* Augmentation de la marge pour améliorer la clarté générale */
-@media screen and (min-width: 1440px) {
-  .body {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
+  margin-bottom: 20px;
 }

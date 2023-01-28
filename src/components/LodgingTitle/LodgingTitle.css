@@ -12,4 +12,7 @@
   .title {
     font-size: 36px;
   }
+  .title-container {
+    padding-right: 8px;
+  }
 }

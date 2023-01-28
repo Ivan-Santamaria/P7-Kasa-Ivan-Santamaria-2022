@@ -1,5 +1,4 @@
 .host-container {
-  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -7,12 +6,11 @@
 
 .name-container {
   display: flex;
-  margin-right: 10px;
 }
 
 .name {
   color: #ff6060;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -27,7 +25,6 @@
   .host-container {
     width: 100%;
     justify-content: flex-end;
-    margin-bottom: 30px;
   }
 
   .name {
@@ -37,5 +34,10 @@
   .profile-picture {
     width: 64px;
     height: 64px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .name {
+    font-size: 20px;
   }
 }

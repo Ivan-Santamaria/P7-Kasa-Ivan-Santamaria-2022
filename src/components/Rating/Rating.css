@@ -1,3 +1,8 @@
+.avis {
+  flex-grow: 1;
+  width: 100%;
+  font-size: 1.2em;
+}
 .colored-star {
   color: #ff6060;
 }
@@ -6,4 +11,25 @@
 }
 .star {
   display: flex;
+}
+
+/* Média query */
+@media screen and (min-width: 768px) {
+  .star {
+    font-size: 1.3em;
+  }
+  .avis {
+    padding-top: 1.5em;
+    padding-right: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .avis {
+    padding-top: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .avis {
+    width: auto;
+  }
 }
